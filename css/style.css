@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&family=Qwitcher+Grypen:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollTop */
+#scrollUp {
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    bottom: 20px;
+    left: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#scrollUp span {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+/* scrollTop */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Cinzel';
+    background-color: azure;
+}
+
+header {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+}
+
+nav {
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+    margin: 8px 0 8px 0;
+}
+
+.navigation a {
+    line-height: 65px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close-bar {
+    display: none;
+    line-height: 65px;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: none;
+    line-height: 65px;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+nav .btns {
+    display: flex;
+}
+
+nav .btns a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+    margin-left: 10px;
+    border: 1.4px solid #192128;
+    height: 40px;
+    margin-top: 10px;
+}
+
+nav .btns a:hover {
+    background-color: #192128;
+    color: white;
+}
+
+#hero {
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 700px;
+    filter: brightness(70%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+#hero .quote {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    width: 100%;
+    line-height: 360%;
+}
+
+#hero .quote .fLine {
+    font-family: 'Qwitcher Grypen';
+    font-size: 4rem;
+
+}
+
+#hero .quote span {
+    font-family: 'Cinzel';
+    font-size: 2.4rem;
+}
+
+/* End services */
+#services {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+#services .showMore {
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+#services .showMore p:hover {
+    text-decoration: underline;
+}
+
+.showMore .more.nactive {
+    display: none;
+}
+
+.showMore .less {
+    display: none;
+}
+
+.showMore .less.active {
+    display: block;
+}
+
+#services h1 {
+    margin: 50px 0 40px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#services .service {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#services .service img {
+    max-width: 340px;
+    height: 220px;
+}
+
+#services .service p {
+    display: flex;
+    justify-content: center;
+}
+
+#services .service .service-description {
+    padding: 40px 40px 30px 0px;
+    padding-left: 70px;
+    font-family: 'Poppins';
+}
+
+#services .service .service-description p {
+    text-align: center;
+    display: flex;
+    font-family: 'Cinzel';
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Start More Services */
+.moreServices {
+    display: none;
+}
+
+.moreServices.active {
+    display: block;
+}
+
+/* End More Services */
+/* End services  */
+
+/* Start footer */
+#footer {
+    font-family: 'Poppins';
+    background-color: #8e9ba3;
+}
+
+#footer .footer-content {
+    display: flex;
+}
+
+.footer-content div {
+    width: 32%;
+}
+
+.footer-content .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#footer .footer-content .contact {
+    padding: 40px 0;
+}
+
+.contact h1 {
+    font-family: 'Cinzel';
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact div {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.contact div i {
+    padding-right: 10px;
+}
+
+.footer-content .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .links div {
+    width: 48%;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.social h1 {
+    font-family: 'Cinzel';
+    padding-bottom: 20px;
+}
+
+.social i {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    margin-left: 8px;
+}
+
+.social i:hover {
+    transform: scale(1.3);
+}
+
+.social i:nth-child(2):hover {
+    color: rgb(69, 69, 194);
+}
+
+.social i:nth-child(3):hover {
+    color: rgb(179, 76, 93);
+}
+
+.social i:nth-child(5):hover {
+    color: rgb(50, 72, 162);
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.quick-links a:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.quick-links h1 {
+    font-family: 'Cinzel';
+    padding: 40px 0 15px 0;
+}
+
+/* End footer */
+
+/* Start About-Us */
+#about-us {
+    margin-top: 50px;
+}
+
+#about-us .about-us-head {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.about-us-head h1 {
+    padding-bottom: 30px;
+}
+
+.about-us-head p {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    text-align: start;
+    padding: 0 50px 0 50px;
+}
+
+/* End About-Us */
+
+/* Start Contact */
+#contact {
+    width: 85%;
+    margin: 50px auto 50px;
+}
+
+#contact h1 {
+    text-align: center;
+    padding: 50px 0 30px 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px #000,
+        3px 3px 5px #8e9ba3;
+}
+
+#contact .main-contact {
+    display: flex;
+}
+
+.main-contact .left-contact {
+    width: 60%;
+    background-color: #417ecd;
+}
+
+.left-contact form {
+    width: 85%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-contact form div {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.left-contact form div:nth-child(5) {
+    width: 100%;
+}
+
+form h2 {
+    width: 100%;
+    font-family: 'Poppins';
+    color: rgb(28, 28, 225);
+    margin-bottom: 10px;
+}
+
+form div p {
+    font-family: 'Poppins';
+    padding-bottom: 5px;
+}
+
+form div input:nth-child(2),
+input:nth-child(3),
+input:nth-child(4) {
+    background-color: #417ecd;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form div input {
+    width: 80%;
+    outline: none;
+    padding-bottom: 4px;
+    color: #c6ccd4;
+    font-size: 0.9rem;
+}
+
+form div input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+}
+
+form div textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 7px;
+}
+
+form div textarea::placeholder {
+    font-size: 0.9rem;
+}
+
+form .send {
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+form .send:hover {
+    background-color: dodgerblue;
+}
+
+.main-contact .right-contact {
+    width: 40%;
+    background-color: whitesmoke;
+}
+
+.right-contact h2 {
+    padding-top: 45px;
+    font-family: 'Poppins';
+    padding-left: 40px;
+    color: rgb(28, 28, 225);
+    padding-bottom: 50px;
+}
+
+.right-contact .contact-address {
+    width: 82%;
+    margin: auto;
+}
+
+.contact-address table {
+    font-family: 'Poppins';
+}
+
+/* End Contact Us */
+
+@media(max-width:888px) {
+    .navigation {
+        background-color: rgb(174, 154, 154);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        visibility: hidden;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .navigation.active {
+        visibility: visible;
+    }
+
+    .btns {
+        visibility: hidden;
+    }
+
+    .service img {
+        padding-top: 10px;
+    }
+
+    .menu-bar {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        right: 30px;
+        top: 15px;
+    }
+
+    .close-bar.show {
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 20px;
+        color: black;
+        top: 11px;
+        right: 32px;
+    }
+
+    .contact div {
+        justify-content: center;
+    }
+
+    .logo.active {
+        z-index: 10;
+        position: fixed;
+        top: 13px;
+    }
+}
+
+@media(max-width:851px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img {
+        margin: auto;
+    }
+
+    .service-description {
+        width: 100%;
+        padding-right: 70px;
+    }
+
+    .service-description p {
+        text-align: center;
+    }
+
+    .service:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:971px) {
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-content .contact div {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .footer-content div {
+        width: 49%;
+    }
+
+    .footer-content img {
+        padding-top: 40px;
+    }
+
+    .footer-content .links {
+        width: 100%;
+    }
+}
+
+@media(max-width:581px) {
+    .footer-content div {
+        width: 100%;
+    }
+
+    .footer-content .contact div {
+        text-align: center;
+    }
+
+    .footer-content img {
+        margin-top: -50px;
+    }
+}
+
+@media(max-width:964px) {
+    .footer-logo {
+        margin: auto;
+    }
+
+    .contact {
+        margin: auto;
+    }
+}
+
+@media (max-width:998px) {
+    .right-contact {
+        display: none;
+    }
+
+    .main-contact .left-contact {
+        width: 100%;
+    }
+}

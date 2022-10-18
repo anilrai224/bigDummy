@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&family=Qwitcher+Grypen:wght@700&family=Ubuntu&display=swap');
+
+/* Start SignUp */
+body{
+    background-color: #4071f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.formArea{
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+h1{
+    margin-top: -30px;
+    text-align: center;
+}
+.formArea form{
+    display: flex;
+    flex-direction: column;
+}
+form input,button{
+    height: 30px;
+    margin: 9px 0 9px 0;
+    outline: none;
+    font-size: 1rem;
+}
+.signup{
+    height: 36px;
+    background-color: #0171d3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+i{
+    color: red;
+    padding: 10px 13px;
+    background-color: blue;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 50px;
+}
+button{
+    height: 36px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+button:nth-child(2){
+    padding-bottom: 40px;
+}
+form p{
+    text-align: center;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End SignUp */
