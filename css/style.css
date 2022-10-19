@@ -9,7 +9,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+.container2{
+    width: 1200px;
+    margin: auto;
+}
 /* scrollTop */
 #scrollUp {
     position: fixed;
@@ -439,7 +442,7 @@ form div input {
 
 form div input::placeholder {
     color: rgba(255, 255, 255, 0.4);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 form div textarea {
@@ -622,6 +625,12 @@ form .send:hover {
     }
 
     .main-contact .left-contact {
+        width: 100%;
+    }
+}
+/* container2 */
+@media (max-width:1200px) {
+    .container2{
         width: 100%;
     }
 }

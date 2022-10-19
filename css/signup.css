@@ -37,20 +37,14 @@ form input,button{
     border-radius: 4px;
 }
 i{
-    color: red;
     padding: 10px 13px;
-    background-color: blue;
     border-radius: 50%;
-    font-size: 12px;
-    margin-right: 50px;
+    font-size: 15px;
 }
 button{
     height: 36px;
-    display:flex;
-    align-items: center;
     text-align: center;
 }
-
 button:nth-child(2){
     padding-bottom: 40px;
 }
@@ -63,3 +57,8 @@ form p{
     align-items: center;
 }
 /* End SignUp */
+@media(max-width:549px){
+    form input{
+        width: 100%;
+    }
+}
