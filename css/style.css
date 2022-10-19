@@ -16,7 +16,7 @@ html {
     height: 55px;
     width: 55px;
     bottom: 20px;
-    left: 50px;
+    right: 40px;
     display: none;
     justify-content: center;
     align-items: center;
@@ -496,7 +496,7 @@ form .send:hover {
         top: 0;
         left: 0;
         right: 0;
-        height: 100%;
+        bottom: 0;
         flex-direction: column;
         display: flex;
         visibility: hidden;
