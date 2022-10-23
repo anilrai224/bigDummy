@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4071f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.formArea{
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 20px;
+    position: relative;
+}
+h1{
+    margin-top: -30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formArea form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+form input, button{
+    height: 30px;
+    margin: 9px 0 9px 0;
+    outline: none;
+    font-size: 1rem;
+}
+form span{
+    position: absolute;
+}
+.userName{
+    top: 15px;
+    left: 8px;
+    transition: .5s;
+}
+.password{
+    top: 83px;
+    left: 8px;
+    transition: .5s;
+    pointer-events: non;
+}
+form input:nth-child(1):valid + .userName,
+form input:nth-child(1):focus + .userName{
+    top: -10px;
+}
+
+form input:nth-child(3):valid + .password,
+form input:nth-child(3):focus + .password{
+    top: 58px;
+}
+
