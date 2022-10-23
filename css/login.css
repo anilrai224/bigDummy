@@ -30,7 +30,7 @@ h1{
     gap: 20px;
 }
 form input, button{
-    height: 30px;
+    height: 35px;
     margin: 9px 0 9px 0;
     outline: none;
     font-size: 1rem;
@@ -51,11 +51,19 @@ form span{
 }
 form input:nth-child(1):valid + .userName,
 form input:nth-child(1):focus + .userName{
-    top: -10px;
+    top: -2px;
+    background-color: #fff;
+    padding: 0 5px 0 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 form input:nth-child(3):valid + .password,
 form input:nth-child(3):focus + .password{
-    top: 58px;
+    top: 70px;
+    background-color: #fff;
+    padding: 0 5px 0 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
